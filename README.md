@@ -2,6 +2,36 @@
 
 All notable changes to Mau Tools Enhanced will be documented in this file.
 
+## [3.2.1] - 2026-02-28
+
+### 🛠️ Enhanced
+- **Menu Validation** - Complete input validation with proper error handling
+- **Text Color Scheme** - Changed from purple (0D) to white (0F) for better readability  
+- **System Uptime Display** - Human-readable format instead of WMIC timestamp
+- **Error Logging** - Silent error handling with comprehensive logging
+- **Network Speed Test** - Simplified and stabilized connectivity testing
+
+### 🐛 Fixed
+- **Menu Choice Validation** - Fixed variable quoting preventing crashes
+- **Option 17 Gap** - Added explicit handling for missing menu option
+- **RAM Benchmark** - Resolved PowerShell syntax errors
+- **System Logs Access** - Added error handling for wevtutil permission issues
+- **Network Speed Test** - Replaced complex PowerShell with simple ping tests
+- **Error Handler Conflicts** - Renamed handle_error to error_handler to prevent accidental calls
+
+### 🔧 Technical
+- **Variable Quoting** - All menu choice variables now properly quoted
+- **Error Handler Renaming** - Prevents accidental function calls
+- **Menu Routing Logic** - Complete coverage for all options 0-26
+- **PowerShell Syntax** - Fixed all script syntax errors
+- **Logging Enhancement** - Errors logged silently without screen disruption
+
+### 🚀 Stability
+- **Zero-Crash Menu** - Robust input validation prevents all crashes
+- **Silent Error Recovery** - Errors logged automatically, return to menu
+- **Complete Function Coverage** - All menu options tested and working
+- **Enhanced Debugging** - Better error tracking and resolution
+
 ## [3.2.0] - 2026-02-27
 
 ### 🚀 Added
@@ -100,14 +130,12 @@ All notable changes to Mau Tools Enhanced will be documented in this file.
 ## 🔄 Update Process
 
 ### Automatic Updates
-- **Version Check** - GitHub comparison on startup
-- **Download** - Secure file retrieval
-- **Installation** - Backup and replace
-- **Restart** - Seamless version transition
+1. **Version Check** - GitHub comparison on startup
+2. **Download** - Secure file retrieval
+3. **Installation** - Backup and replace
+4. **Restart** - Seamless version transition
 
 ### Manual Updates
-- **Download Latest** - From GitHub releases
-- **Replace File** - Backup old version
-- **Run New Version** - Automatic initialization
-
----
+1. **Download Latest** - From GitHub releases
+2. **Replace File** - Backup old version
+3. **Run New Version** - Automatic initialization
